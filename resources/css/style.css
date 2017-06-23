@@ -84,6 +84,7 @@ nav span {
 
 .products {
   display: inline;
+  width: 30%;
 }
 
 .item {
@@ -94,12 +95,16 @@ nav span {
 }
 
 .item img {
-  width 30%;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .item .description {
   background-color: black;
   text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .item span {
