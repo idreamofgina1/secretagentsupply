@@ -11,9 +11,16 @@ header {
   color: white;
 }
 
+.logo #container {
+  display: flex;
+}
+
 footer {
   color: white;
   background-color: black;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: left;
 }
 
 nav {
@@ -39,7 +46,7 @@ nav span {
 
 .logo {
   background-color: black;
-  display: block;
+  display: flex;
 }
 
 .logo img {
@@ -82,4 +89,35 @@ nav span {
 .item {
   flex-direction: column;
   display: block;
+  border: 4px solid black;
+  width: 30%;
+}
+
+.item img {
+  width 30%;
+}
+
+.item .description {
+  background-color: black;
+  text-align: center;
+}
+
+.item span {
+  color: white;
+}
+
+.location {
+  width: 35%;
+}
+
+.hours {
+  width: 35%;
+}
+
+.storeinfo .header {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
