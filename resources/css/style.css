@@ -39,6 +39,11 @@ nav span {
   text-align: -webkit-match-parent;
 }
 
+nav .mobilecontainer {
+  background-color: firebrick;
+  padding-left: 3rem;
+}
+
 #mainimage {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   height: 25rem;
@@ -157,9 +162,13 @@ footer p {
   padding-left: 3rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 470px) {
   #mainimage {
     height: 10rem;
+  }
+  .imagecopy {
+    top: 2rem;
+    padding: 0px 0px;
   }
   .imagecopy p {
     font-size: .77rem;
@@ -171,27 +180,41 @@ footer p {
   }
   .item {
     width: 90%;
+    justify-content: space-between;
   }
   .storeinfo {
     margin-bottom: .5rem;
+    display: block;
   }
   .location {
     width: 90%;
   }
   .hours {
     width: 90%;
+  }
+  nav #desktopcontainer {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
   .item {
     width: 47%;
+    justify-content: space-between;
   }
   .location {
     width: 35%;
   }
-
   .hours {
     width: 35%;
+  }
+  nav #desktopcontainer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav #mobilenav{
+    display: none;
   }
 }
