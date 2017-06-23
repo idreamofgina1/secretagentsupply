@@ -26,12 +26,17 @@ footer {
 nav {
   background-color: firebrick;
   display: flex;
+  justify-content: space-between;
+  padding-left: 3rem;
 }
 
 nav span {
   display: inline-block;
   padding-top: .75rem;
-  padding-bottom: .75rem;`
+  padding-bottom: .75rem;
+  padding-right: 4.5rem;
+  justify-content: space-between;
+  text-align: -webkit-match-parent;
 }
 
 #mainimage {
@@ -42,6 +47,7 @@ nav span {
 
 #container {
   width: 960px;
+  left: 20rem;
 }
 
 .logo {
@@ -53,6 +59,8 @@ nav span {
   height: 1.5rem;
   margin-left: .5rem;
   margin-right: 1rem;
+  padding-left: 3rem;
+  padding-top: .5rem;
 }
 
 .logo h3 {
@@ -63,9 +71,12 @@ nav span {
 
 .imagecopy {
   background-color: black;
-  width: 20rem;
-  top: 9rem;
-  padding-left: 3rem;
+  width: 24rem;
+  top: 6rem;
+  left: 3rem;
+  padding: 1em 1em;
+  position: relative;
+  min-width: 20rem;
 }
 
 .imagecopy p{
@@ -73,17 +84,22 @@ nav span {
   font-weight: bold;
   padding-top: 2rem;
   padding-left: 3rem;
-  display: block
+  display: block;
+  margin-bottom; .25rem;
 }
 
 .imagecopy h1{
   font-size: 2rem;
   font-weight: bold;
   padding-left: 3rem;
+  padding-bottom: 2rem;
 }
 
 .products {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px;
+  padding-left: 3rem;
 }
 
 .item {
@@ -98,7 +114,7 @@ nav span {
   height: 9rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  max-width: 16em;
+  max-width: 15em;
 }
 
 .item .description {
@@ -112,8 +128,17 @@ nav span {
   color: white;
 }
 
+.storeinfo {
+  display: flex;
+  margin: 3em 0px 0px;
+  padding-left: 3rem;
+}
+
 .location {
   width: 35%;
+  align-content:flex-start;
+  margin-right: auto;
+  margin-bottom: 4rem;
 }
 
 .hours {
@@ -126,4 +151,47 @@ nav span {
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+footer p {
+  padding-left: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #mainimage {
+    height: 10rem;
+  }
+  .imagecopy p {
+    font-size: .77rem;
+    padding-left: 2rem;
+  }
+  .imagecopy h1 {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+  .item {
+    width: 90%;
+  }
+  .storeinfo {
+    margin-bottom: .5rem;
+  }
+  .location {
+    width: 90%;
+  }
+  .hours {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .item {
+    width: 47%;
+  }
+  .location {
+    width: 35%;
+  }
+
+  .hours {
+    width: 35%;
+  }
 }
